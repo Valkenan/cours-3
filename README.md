@@ -5,6 +5,7 @@
 [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
 [![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://visualstudio.microsoft.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202025-blue?style=for-the-badge)]()
 
 _A comprehensive collection of C++ programming exercises covering core concepts from basics to intermediate level._
 
@@ -41,10 +42,10 @@ This repository contains structured C++ programming lessons designed to build a 
 
 ### 📁 Additional Projects
 
-| Project                     | Description                        | Key Concepts                           |
-| --------------------------- | ---------------------------------- | -------------------------------------- |
-| [Arrays](./Arrays/)         | Array fundamentals with enums      | Arrays, `enum`, `switch`, type casting |
-| [Test Stars](./test_stars/) | Pattern printing with nested loops | Nested `for` loops, number patterns    |
+| Project                     | Description                     | Key Concepts                             |
+| --------------------------- | ------------------------------- | ---------------------------------------- |
+| [Arrays](./Arrays/)         | Array fundamentals with enums   | Arrays, `enum`, `switch`, type casting   |
+| [Test Stars](./test_stars/) | Number pyramid pattern printing | Nested `for` loops, descending sequences |
 
 ---
 
@@ -157,6 +158,64 @@ if (number > 50) {
     continue;  // Skip to next iteration
 }
 sum += number;
+```
+
+</details>
+
+<details>
+<summary><b>📦 Arrays Project</b></summary>
+
+**Topics Covered:**
+
+-   Array declaration and initialization
+-   String arrays
+-   Enum definition and usage
+-   Type casting with enums
+-   Switch-case with enum values
+-   If-else conditional statements
+
+**Code Highlights:**
+
+```cpp
+enum enColor { red, black, white, grean, yellow, brown, pink };
+
+int array[5] = { 0, 1, 2, 3, 4 };
+string student[3] = { "adam", "salah", "omar" };
+
+color = enColor(x);  // Type casting int to enum
+```
+
+</details>
+
+<details>
+<summary><b>📦 Test Stars Project</b></summary>
+
+**Topics Covered:**
+
+-   Nested for loops
+-   Pattern printing algorithms
+-   Descending number sequences
+-   Console output formatting
+
+**Code Highlights:**
+
+```cpp
+for (int i = 1; i <= 10; i++) {
+    for (int j = i; j <= 10; j++) {
+        cout << j << " ";
+    }
+    cout << "\n";
+}
+```
+
+**Output Pattern:**
+
+```
+1 2 3 4 5 6 7 8 9 10
+2 3 4 5 6 7 8 9 10
+3 4 5 6 7 8 9 10
+...
+10
 ```
 
 </details>
